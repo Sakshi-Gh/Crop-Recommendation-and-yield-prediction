@@ -1,0 +1,119 @@
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header .logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* Tab Content */
+.tab {
+  display: none;
+  padding: 20px;
+}
+
+.tab.active {
+  display: block;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.custom-tab {
+    color: green;
+    border-color: green;
+}
+
+.custom-tab.active {
+    background-color: green;
+    color: white;
+}
+
+.custom-tab:hover {
+    background-color: #e6ffe6;
+}
+
+.p-4 shadow rounded bg-white {
+    height: 400px; 
+}
+
+/* Centering the tabs and removing borders */
+.nav-tabs {
+  border-bottom: none; /* Removes the default tab underline */
+}
+
+/* flexible box */
+.d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling tabs as buttons */
+.nav-tabs .custom-tab-button {
+  background-color: #f8f9fa; 
+  border: 2px solid #28a745; 
+  color: #28a745; 
+  border-radius: 5px; 
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 0 10px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Active tab styles */
+.nav-tabs .custom-tab-button.active {
+  background-color: #28a745; 
+  color: white; 
+}
+
+/* Hover effect */
+.nav-tabs .custom-tab-button:hover {
+  background-color: #e6ffe6; 
+  color: #28a745; 
+  border-color: #28a745;
+}
